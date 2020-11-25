@@ -1,5 +1,5 @@
 /* This programm parses any number whith a whitespace
-*  Used 11 lines instead of 10, cuz textual part */
+*  Used 11 lines instead of 10, cuz textual part  */
 
 package Parser;
 
