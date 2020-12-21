@@ -5,13 +5,29 @@ public class Polyndrom {
 
     public static void main(String[] args) {
 
+        //ПОСМОТРЕЛ УРОК ПРО StringBuilder...;
+
         Scanner scanner = new Scanner(System.in);
         String variable;
 
         System.out.println("Введите текст для проверки на полиндром:");
-
         variable = scanner.nextLine();
-        int decrem;
+
+        StringBuilder builder = new StringBuilder();
+        builder.append(variable);
+
+        String variableRev = builder.toString();
+        String variableFov = builder.reverse().toString();
+
+        if (variableFov.equals(variableRev)){
+            System.out.println("Это полиндром");
+        } else {System.out.println("Выражение не является полиндромом");}
+    }
+}
+
+        //А это старая, но тоже стабильно работающая версия
+
+        /*int decrem;
         boolean result;
 
         result = false;
@@ -30,6 +46,5 @@ public class Polyndrom {
         }
 
         if (result) System.out.println("Это полиндром.");
-        else System.out.println("Выражение не является полиндромом.");
-    }
-}
+        else System.out.println("Выражение не является полиндромом.");*/
+
