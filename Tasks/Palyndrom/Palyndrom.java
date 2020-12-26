@@ -1,7 +1,7 @@
-package Plyndrom;
+package Palyndrom;
 import java.util.Scanner;
 
-public class Polyndrom {
+public class Palyndrom {
 
     public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class Polyndrom {
         Scanner scanner = new Scanner(System.in);
         String variable;
 
-        System.out.println("Введите текст для проверки на полиндром:");
+        System.out.println("Введите текст для проверки на палиндром:");
         variable = scanner.nextLine();
 
         StringBuilder builder = new StringBuilder();
@@ -20,8 +20,8 @@ public class Polyndrom {
         String variableFov = builder.reverse().toString();
 
         if (variableFov.equals(variableRev)){
-            System.out.println("Это полиндром");
-        } else {System.out.println("Выражение не является полиндромом");}
+            System.out.println("Это палиндром");
+        } else {System.out.println("Выражение не является палиндромом");}
     }
 }
 
