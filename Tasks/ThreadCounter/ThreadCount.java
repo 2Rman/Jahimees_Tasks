@@ -1,6 +1,6 @@
 package ThreadCounter;
 
-public class TreadCount {
+public class ThreadCount {
     public static void main(String[] args) {
 
 
